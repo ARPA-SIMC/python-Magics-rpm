@@ -35,7 +35,6 @@ if [[ $image =~ ^fedora: || $image =~ ^centos: ]]
 then
     mkdir -p ~/rpmbuild/{BUILD,BUILDROOT,RPMS,SOURCES,SPECS,SRPMS}
     cp python-Magics.spec ~/rpmbuild/SPECS/
-    cp *.patch ~/rpmbuild/SOURCES/
     spectool -g -R -S ~/rpmbuild/SPECS/python-Magics.spec
     set +x
     rpmbuild -ba ~/rpmbuild/SPECS/python-Magics.spec 2>&1 | pv -q -L 3k
