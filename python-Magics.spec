@@ -22,6 +22,8 @@ BuildRequires:  %{python3_vers}-pytest
 BuildRequires:  %{python3_vers}-setuptools
 BuildRequires:  Magics-devel
 
+Requires:       Magics
+
 %description
 Python bindings for Magics.
 
