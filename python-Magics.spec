@@ -4,7 +4,7 @@
 %define python3_vers python3
 %endif
 
-%global releaseno 1
+%global releaseno 2
 
 Name:           python-Magics
 Version:        1.0.6
@@ -54,6 +54,9 @@ Python3 bindings for Magics.
 
 
 %changelog
-* Tue May 21 2019 Emanuele Di Giacomo <edigiacomo@arpae.it>
+* Mon Jun 10 2019 Emanuele Di Giacomo <edigiacomo@arpae.it> - 1.0.6-2
+- Magics dependency
+
+* Tue May 21 2019 Emanuele Di Giacomo <edigiacomo@arpae.it> - 1.0.6-1
 - Initial package
 
