@@ -10,6 +10,7 @@
 [![Build Status](https://badges.herokuapp.com/travis/ARPA-SIMC/python-Magics-rpm?branch=master&env=DOCKER_IMAGE=fedora:31&label=fedora31)](https://travis-ci.org/ARPA-SIMC/python-Magics-rpm)
 [![Build Status](https://badges.herokuapp.com/travis/ARPA-SIMC/python-Magics-rpm?branch=master&env=DOCKER_IMAGE=fedora:rawhide&label=fedorarawhide)](https://travis-ci.org/ARPA-SIMC/python-Magics-rpm)
 
+[![Build Status](https://copr.fedorainfracloud.org/coprs/simc/stable/package/Magics/status_image/last_build.png)](https://copr.fedorainfracloud.org/coprs/simc/stable/package/python-Magics/)
 
 ## Introduction
 
