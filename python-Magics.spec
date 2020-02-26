@@ -7,7 +7,7 @@
 %global releaseno 2
 
 Name:           python-Magics
-Version:        1.0.6
+Version:        1.1.1
 Release:        1%{?dist}
 Summary:        Python bindings for Magics
 
@@ -54,6 +54,9 @@ Python3 bindings for Magics.
 
 
 %changelog
+* Wed Feb 26 2020 Daniele Branchini <dbranchini@arpae.it> - 1.1.1-1
+- Upstream update
+
 * Mon Jun 10 2019 Emanuele Di Giacomo <edigiacomo@arpae.it> - 1.0.6-2
 - Magics dependency
 
