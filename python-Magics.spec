@@ -1,13 +1,7 @@
-%if 0%{?rhel} == 7
-%define python3_vers python36
-%else
-%define python3_vers python3
-%endif
-
-%global releaseno 2
+%global releaseno 1
 
 Name:           python-Magics
-Version:        1.1.1
+Version:        1.5.6
 Release:        1%{?dist}
 Summary:        Python bindings for Magics
 
@@ -16,10 +10,10 @@ URL:            https://pypi.org/project/Magics/
 Source0:        https://files.pythonhosted.org/packages/source/M/Magics/Magics-%{version}.tar.gz#/python-Magics-%{version}.tar.gz
 BuildArch:      noarch
 
-BuildRequires:  %{python3_vers}-devel
-BuildRequires:  %{python3_vers}-numpy
-BuildRequires:  %{python3_vers}-pytest
-BuildRequires:  %{python3_vers}-setuptools
+BuildRequires:  python3-devel
+BuildRequires:  python3-numpy
+BuildRequires:  python3-pytest
+BuildRequires:  python3-setuptools
 BuildRequires:  Magics-devel
 
 
@@ -27,11 +21,11 @@ BuildRequires:  Magics-devel
 Python bindings for Magics.
 
 
-%package     -n %{python3_vers}-Magics
+%package     -n python3-Magics
 Summary:        Python3 bindings for Magics
 Requires:       Magics
 
-%description -n %{python3_vers}-Magics
+%description -n python3-Magics
 Python3 bindings for Magics.
 
 
@@ -48,12 +42,15 @@ Python3 bindings for Magics.
 # TODO: it seems that the tests are missing
 # %{__python3} setup.py test
 
-%files -n %{python3_vers}-Magics
+%files -n python3-Magics
 %doc README.rst
 %{python3_sitelib}/*
 
 
 %changelog
+* Thu Mar 18 2021 Daniele Branchini <dbranchini@arpae.it> - 1.5.6-1
+- Upstream update, dropped support for CentOS7
+
 * Wed Feb 26 2020 Daniele Branchini <dbranchini@arpae.it> - 1.1.1-1
 - Upstream update
 
