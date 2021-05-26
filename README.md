@@ -1,4 +1,3 @@
-[![Build Status](https://simc.arpae.it/moncic-ci/python-Magics-rpm/centos7.png)](https://simc.arpae.it/moncic-ci/python-Magics-rpm/)
 [![Build Status](https://simc.arpae.it/moncic-ci/python-Magics-rpm/centos8.png)](https://simc.arpae.it/moncic-ci/python-Magics-rpm/)
 [![Build Status](https://simc.arpae.it/moncic-ci/python-Magics-rpm/fedora32.png)](https://simc.arpae.it/moncic-ci/python-Magics-rpm/)
 [![Build Status](https://simc.arpae.it/moncic-ci/python-Magics-rpm/fedora34.png)](https://simc.arpae.it/moncic-ci/python-Magics-rpm/)
