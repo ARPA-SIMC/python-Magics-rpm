@@ -8,6 +8,7 @@ Summary:        Python bindings for Magics
 License:        Apache License, Version 2.0
 URL:            https://pypi.org/project/Magics/
 Source0:        https://files.pythonhosted.org/packages/source/M/Magics/Magics-%{version}.tar.gz#/python-Magics-%{version}.tar.gz
+# see: https://github.com/ARPA-SIMC/python-Magics-rpm/issues/1
 Patch1:         https://github.com/arpa-simc/python-eccodes-rpm/raw/v%{version}-%{releaseno}/python-Magics-disable-findlibs.patch
 BuildArch:      noarch
 
