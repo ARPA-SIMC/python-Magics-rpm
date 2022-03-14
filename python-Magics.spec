@@ -1,8 +1,8 @@
-%global releaseno 1
+%global releaseno 2
 
 Name:           python-Magics
 Version:        1.5.7
-Release:        1%{?dist}
+Release:        %{releaseno}%{?dist}
 Summary:        Python bindings for Magics
 
 License:        Apache License, Version 2.0
@@ -50,6 +50,9 @@ Python3 bindings for Magics.
 
 
 %changelog
+* Mon Mar 14 2022 Emanuele Di Giacomo <edigiacomo@arpae.it> - 1.5.7-2
+- Remove findlibs dependency (#1)
+
 * Fri Mar 11 2022 Daniele Branchini <dbranchini@arpae.it> - 1.5.7-1
 - Upstream update
 
