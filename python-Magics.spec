@@ -1,4 +1,4 @@
-%global releaseno 2
+%global releaseno 3
 
 Name:           python-Magics
 Version:        1.5.7
@@ -9,7 +9,7 @@ License:        Apache License, Version 2.0
 URL:            https://pypi.org/project/Magics/
 Source0:        https://files.pythonhosted.org/packages/source/M/Magics/Magics-%{version}.tar.gz#/python-Magics-%{version}.tar.gz
 # see: https://github.com/ARPA-SIMC/python-Magics-rpm/issues/1
-Patch1:         https://github.com/arpa-simc/python-eccodes-rpm/raw/v%{version}-%{releaseno}/python-Magics-disable-findlibs.patch
+Patch1:         https://github.com/arpa-simc/python-Magics-rpm/raw/v%{version}-%{releaseno}/python-Magics-disable-findlibs.patch
 BuildArch:      noarch
 
 BuildRequires:  python3-devel
@@ -50,6 +50,9 @@ Python3 bindings for Magics.
 
 
 %changelog
+* Mon Mar 14 2022 Emanuele Di Giacomo <edigiacomo@arpae.it> - 1.5.7-3
+- Fixed Patch1 URL
+
 * Mon Mar 14 2022 Emanuele Di Giacomo <edigiacomo@arpae.it> - 1.5.7-2
 - Remove findlibs dependency (#1)
 
