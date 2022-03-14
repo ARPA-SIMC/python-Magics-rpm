@@ -1,0 +1,32 @@
+--- setup.py.orig	2022-03-14 10:21:03.399951716 +0100
++++ setup.py	2022-03-14 10:24:00.433126155 +0100
+@@ -37,8 +37,6 @@
+ if sys.version_info < (3, 7):
+     install_requires = ["numpy<1.20"]
+ 
+-install_requires += ["findlibs"]
+-
+ setuptools.setup(
+     name="Magics",
+     version=version,
+--- Magics/Magics.py.orig	2022-03-14 10:21:11.919964691 +0100
++++ Magics/Magics.py	2022-03-14 10:24:26.190139910 +0100
+@@ -15,12 +15,7 @@
+ import numpy as np
+ from numpy.ctypeslib import ndpointer
+ 
+-try:
+-    import ecmwflibs as findlibs
+-except ImportError:
+-    import findlibs
+-
+-lib = findlibs.find("MagPlus")
++lib = "/usr/lib64/libMagPlus.so"
+ if lib is None:
+     raise RuntimeError("Cannot find MagPlus library")
+ 
+--- Magics.egg-info/requires.txt.orig	2022-03-14 10:22:16.448047368 +0100
++++ Magics.egg-info/requires.txt	2022-03-14 10:22:22.627052041 +0100
+@@ -1,2 +1 @@
+ numpy
+-findlibs
