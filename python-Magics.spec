@@ -32,7 +32,7 @@ Python3 bindings for Magics.
 
 
 %prep
-%autosetup -n Magics-%{version} -p1
+%autosetup -n Magics-%{version} -p0
 
 %build
 %py3_build
